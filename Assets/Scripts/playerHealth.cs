@@ -1,15 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class playerHealth : MonoBehaviour {
     public float maxHealth;
     float currentHealth;
     public GameObject bloodEffect;
 	// Use this for initialization
+
+    //UI
+    public Slider playerHealthSlider;
+
+
 	void Start () {
         currentHealth = maxHealth;
-	}
+            playerHealthSlider.maxValue = maxHealth; //max thanh slider
+            playerHealthSlider.value = maxHealth; //vi trong giao dien da keo value len max
+             
+      }
 	
 	// Update is called once per frame
 	void Update () {
@@ -19,7 +28,9 @@ public class playerHealth : MonoBehaviour {
     {
         if (damage <= 0) return;
         currentHealth -= damage;
-        if (currentHealth <= 0) makeDead();
+            playerHealthSlider.value = currentHealth; //thanh mau bi giam dan theo curhealthy
+
+            if (currentHealth <= 0) makeDead();
     }
     void makeDead()
     {
