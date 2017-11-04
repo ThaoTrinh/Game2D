@@ -9,19 +9,21 @@ public class enemyHealth : MonoBehaviour {
       // Use this for initialization
 
 
-      //enemy die
-      public GameObject enemyHealthEF;
+    //enemy die
+    public GameObject enemyHealthEF;
 
-      // health enemy
+    // health enemy
 
-      public Slider enemyHealthSlider;
+    public Slider enemyHealthSlider;
+    //enemy chet ra vien mau
+    public bool drop;
+    public GameObject theDrop;
 
-
-      void Start() {
+    void Start() {
         currentHealth = maxHealth;
             enemyHealthSlider.maxValue = maxHealth;
             enemyHealthSlider.value = maxHealth;
-      }
+    }
 
     // Update is called once per frame
     void Update() {
@@ -38,9 +40,13 @@ public class enemyHealth : MonoBehaviour {
     }
     void makeDead()
     {
-        Destroy(gameObject);
-            Instantiate(enemyHealthEF, transform.position, transform.rotation);
-      }
+        gameObject.SetActive(false);
+        Instantiate(enemyHealthEF, transform.position, transform.rotation);
+        if(drop)
+        {
+            Instantiate(theDrop, transform.position, transform.rotation);
+        }
+    }
 
 
 }

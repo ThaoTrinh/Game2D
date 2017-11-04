@@ -44,4 +44,11 @@ public class playerHealth : MonoBehaviour {
         //    hurtEnemy.addDamage(weaponDamage);
         //}
     }
+    public void addHealth(float healthAmount)
+    {
+        currentHealth += healthAmount;
+        if (currentHealth > maxHealth)
+            currentHealth = maxHealth;
+        playerHealthSlider.value = currentHealth;
+    }
 }
