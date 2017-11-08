@@ -23,6 +23,13 @@ public class cameraGo : MonoBehaviour {
 
 		transform.position = Vector3.Lerp(transform.position,CameraAfter,smothing*Time.deltaTime);
 
-		if(transform.position.y<lowY) transform.position = new Vector3(transform.position.x,lowY,transform.position.z);
+		if(transform.position.y<lowY){
+			 transform.position = new Vector3(transform.position.x,lowY,transform.position.z);
+		}
+
+		if(target.position.y<lowY - 2000){
+			  Application.LoadLevel("gameover");
+		}
+		
 	}
 }

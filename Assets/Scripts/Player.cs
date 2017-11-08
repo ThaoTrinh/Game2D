@@ -62,7 +62,7 @@ public class Player : MonoBehaviour
 
 
              //ban tu ban phim
-             if(Input.GetAxisRaw("Fire1")>0){
+             if(Input.GetKey("z")){
                    shoot = true;
                    fireBullet();
              }

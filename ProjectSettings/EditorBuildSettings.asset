@@ -14,3 +14,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Level/mainLevel.unity
     guid: 7c6af4213c126bd47ab8d80e2f734623
+  - enabled: 1
+    path: Assets/Level/gameover.unity
+    guid: 0f392830165648c43b064f6b75ba6202
