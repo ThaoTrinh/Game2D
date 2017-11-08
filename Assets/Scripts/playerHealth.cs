@@ -36,6 +36,7 @@ public class playerHealth : MonoBehaviour {
     {
         Instantiate(bloodEffect, transform.position, transform.rotation);
         Destroy(gameObject);
+        Application.LoadLevel("gameover");
         // public float weaponDamage
         //them vao bullethit: ham ontriggerenter2d va stay2d
         //if (other.gameObject.layer == LayerMask.NameToLayer("enemy"))

@@ -17,7 +17,8 @@ public class EndWay : MonoBehaviour {
     {
         if(EndWay.gameObject.tag =="Ground")
         {
-            enemyRun.speed *= -1;
-        }
+          //  enemyRun.enemySpeed *= -1;
+                  enemyRun.facingLeft = !enemyRun.facingLeft;
+            }
     }
 }

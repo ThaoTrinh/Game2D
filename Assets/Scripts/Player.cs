@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
       void FixedUpdate() {
             float move = Input.GetAxis("Horizontal");
 
-		    Anim.SetFloat("speed", Mathf.Abs(move));
+      		    Anim.SetFloat("speed", Mathf.Abs(move));
              Anim.SetBool("ground", standGround);
               Anim.SetBool("shoot", shoot);
 
@@ -62,7 +62,7 @@ public class Player : MonoBehaviour
 
 
              //ban tu ban phim
-             if(Input.GetAxisRaw("Fire1")>0){
+             if(Input.GetKey("z")){
                    shoot = true;
                    fireBullet();
              }

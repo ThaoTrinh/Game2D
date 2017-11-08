@@ -4,14 +4,28 @@ using UnityEngine;
 
 public class enemyRun : MonoBehaviour {
     Rigidbody2D rbEnemy;
-    public static float speed=15;
-	// Use this for initialization
-	void Start () {
+
+    Animator arEnemy;
+
+    //public static float enemySpeed=50;
+    public static float enemySpeed = 50;
+
+      public static bool facingLeft = true;
+      // Use this for initialization
+      void Start () {
         rbEnemy = GetComponent<Rigidbody2D>();
-	}
+            arEnemy = GetComponent<Animator>();
+
+      }
 	
 	// Update is called once per frame
 	void Update () {
-        rbEnemy.velocity = new Vector2(-speed, rbEnemy.velocity.y);
-	}
+        rbEnemy.velocity = new Vector2(facing()*enemySpeed, rbEnemy.velocity.y);
+            arEnemy.SetFloat("speed", enemySpeed);
+            GetComponent<SpriteRenderer>().flipX = facingLeft;
+      }
+
+      float facing(){
+            return facingLeft ? -1 : 1;
+      }
 }
