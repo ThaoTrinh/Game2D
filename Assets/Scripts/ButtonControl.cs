@@ -27,7 +27,13 @@ public class ButtonControl : MonoBehaviour {
 			Application.LoadLevel("Level1");
 		//	return;
 		}
-	}
+
+        if (bt == ButtonControl.ButtonType.btContinue)
+        {
+            Application.LoadLevel("mainLevel");
+            //	return;
+        }
+    }
 	// Use this for initialization
 	void Start () {
 		
@@ -43,6 +49,7 @@ public class ButtonControl : MonoBehaviour {
 		btLevel1,
 		btLevel2,
 		btLevel3,
-		btLevel4
+		btLevel4,
+        btContinue
 	}
 }
