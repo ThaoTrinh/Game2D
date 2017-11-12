@@ -10,7 +10,7 @@ public class ScoreManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         text = GetComponent<Text>();
-        score = 0;
+     //   score = 0;
 	}
 	
 	// Update is called once per frame
@@ -25,9 +25,9 @@ public class ScoreManager : MonoBehaviour {
     {
         score += p;
     }
-    public static void Reset()
+ /*   public static void Reset()
     {
         score = 0;
-    }
+    }*/
      
 }

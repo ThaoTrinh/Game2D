@@ -34,8 +34,8 @@ public class Player : MonoBehaviour
       // Update is called once per frame
       void FixedUpdate() {
             float move = Input.GetAxis("Horizontal");
-
-      		    Anim.SetFloat("speed", Mathf.Abs(move));
+ 
+      	 Anim.SetFloat("speed", Mathf.Abs(move));
              Anim.SetBool("ground", standGround);
               Anim.SetBool("shoot", shoot);
 

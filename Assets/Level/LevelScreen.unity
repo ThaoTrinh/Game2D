@@ -215,6 +215,7 @@ GameObject:
   - component: {fileID: 844451646}
   - component: {fileID: 844451645}
   - component: {fileID: 844451644}
+  - component: {fileID: 844451647}
   m_Layer: 0
   m_Name: btLevel3
   m_TagString: Untagged
@@ -289,6 +290,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &844451647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 844451643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da041b6acf4089a409b2cc99c2ce3c95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bt: 3
 --- !u!1 &1157332208
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,7 +311,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1157332211}
   - component: {fileID: 1157332210}
+  - component: {fileID: 1157332213}
   - component: {fileID: 1157332209}
+  - component: {fileID: 1157332212}
   m_Layer: 0
   m_Name: btLevel2
   m_TagString: Untagged
@@ -373,6 +388,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1157332212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1157332208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da041b6acf4089a409b2cc99c2ce3c95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bt: 2
+--- !u!114 &1157332213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1157332208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04484a18ab9bb4e4eb7958c0d95dbd61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  smothing: 0
 --- !u!1 &1634958775
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,6 +494,7 @@ GameObject:
   - component: {fileID: 1638054225}
   - component: {fileID: 1638054224}
   - component: {fileID: 1638054223}
+  - component: {fileID: 1638054226}
   m_Layer: 0
   m_Name: btLevel4
   m_TagString: Untagged
@@ -528,6 +569,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1638054226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1638054222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da041b6acf4089a409b2cc99c2ce3c95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bt: 4
 --- !u!1 &2043136565
 GameObject:
   m_ObjectHideFlags: 0
