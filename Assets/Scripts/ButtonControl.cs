@@ -100,6 +100,13 @@ public class ButtonControl : MonoBehaviour {
 			
             //	return;
         }
+
+		if (bt == ButtonControl.ButtonType.exit)
+        {
+            Application.Quit();
+			
+            //	return;
+        }
     }
 	// Use this for initialization
 	void Start () {
@@ -121,6 +128,7 @@ public class ButtonControl : MonoBehaviour {
 		Door,
 		Door2,
 		Door3,
-		khobau
+		khobau,
+		exit
 	}
 }
