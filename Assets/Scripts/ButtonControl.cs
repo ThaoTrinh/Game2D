@@ -64,12 +64,14 @@ public class ButtonControl : MonoBehaviour {
 	{
 
 		if(bt==ButtonControl.ButtonType.btPlay){
+			ScoreManager.score = 0;
 			Application.LoadLevel("LevelScreen");
 		
 		}
 
 		  if (bt == ButtonControl.ButtonType.btContinue)
         {
+			
             Application.LoadLevel("mainLevel");
             
         }
