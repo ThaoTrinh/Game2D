@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Level/LevelScreen.unity
     guid: 4b36bc8b25c48e6458ca69b9d92609a5
   - enabled: 1
+    path: Assets/Level/guideScreen.unity
+    guid: 21f7653b6f11f024f8754f0d04915dd1
+  - enabled: 1
     path: Assets/Level/Level1.unity
     guid: e2ec4b885dfdbed4dabbfebf45974358
   - enabled: 1
@@ -24,8 +27,8 @@ EditorBuildSettings:
     path: Assets/Level/Level4.unity
     guid: 7b614fb878a6f8f4f8681e2a1f8a7b8f
   - enabled: 1
-    path: Assets/Level/winner.unity
-    guid: 85ac6f8af43fbd949af44f2239fbab7e
-  - enabled: 1
     path: Assets/Level/gameover.unity
     guid: 0f392830165648c43b064f6b75ba6202
+  - enabled: 1
+    path: Assets/Level/winner.unity
+    guid: 85ac6f8af43fbd949af44f2239fbab7e
